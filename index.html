@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/9e50bf8f9e.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="card-style.css">
+
+
+    <title>Web UI Designs Templates</title>
+    <style>
+        /* internal css styles goes in */
+
+        .tab {
+            overflow:hidden;
+            background-color: #f1f1f1;
+        }
+
+        /* style for a button... */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+          }
+  
+          /* Change background color of buttons on hover */
+          .tab button:hover {
+            background-color: #ddd;
+          }
+  
+          /* Create an active/current tablink class */
+          .tab button.active {
+            background-color: #ccc;
+          }
+  
+          /* Style the tab content */
+          .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')"> Home </button>
+        <button class="tablinks" onclick="openTab(event, 'About')"> About </button>
+        <button class="tablinks" onclick="openTab(event, 'Contact')"> Contact </button>
+        <button class="tablinks"  onclick="openTab(event, 'Portfolio')" id="defaultOpen"><a href="portfolio.html"></a> Portfolio </button>
+    </div>
+    <div id="Home" class="tabcontent">
+		<h3>Web UI Designs Products Card-View Templates</h3>
+		<p>Welcome to our website!</p>
+	</div>
+
+	<div id="About" class="tabcontent">
+		<h3>About</h3>
+		<p>We are a company that specializes in web development.</p>
+	</div>
+
+	<div id="Contact" class="tabcontent">
+		<h3>Contact</h3>
+		<p>You can put your contact information here. Something like, Contact us at contact@ourwebsite.com</p>
+	</div>
+
+	<div id="Portfolio" class="tabcontent flex items-center justify-between p-6 container mx-auto">
+        <h3 class="text-lg">Portfolio Lists are Here! <br />
+            <span class="font-bold text-2xl text-black-600">Please Click Meee...</span></h3><br>
+        <p>
+            <button class="tablinks"  onclick="openTab(event, 'Nike-Shoe-UI')" > Shoes Product View-Card UI Design </button>
+        </p><br>
+        <p>
+            <button class="tablinks"  onclick="openTab(event, 'button-2')" > Coffee Product View-Card UI Design </button>
+        </p><br>
+        <p>
+            <button class="tablinks"  onclick="openTab(event, 'button-3')" > Services Product View-Card UI Design </button>
+        </p><br>
+        <p>
+            <button class="tablinks"  onclick="openTab(event, 'button-4')" > Coming Soon.....! </button>
+        </p><br>
+        <p>
+            <button class="tablinks"  onclick="openTab(event, 'button-5')" > Coming Soon.....! </button>
+        </p><br>
+        <p>
+            <button class="tablinks"  onclick="openTab(event, 'button-6')" > Coming Soon.....! </button>
+        </p>
+    </div>
+
+	<div id="Nike-Shoe-UI" class="tabcontent">
+            <div class="card">
+                <div class="sub-card">
+                    <div class="left">
+                        <img src="red-shoes.png" alt="">
+                        <i class="fa-solid fa-right-long fa-2xl" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-left-long fa-xl"></i>
+                    </div>
+                    <div class="right">
+                        <div class="product info: ">
+                            <div class="product-names">
+                                <h1>Airmax</h1>
+                                <i class="fa fa-search"></i>
+                                <i class="fa fa-user"></i>
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="details">
+                                <h3>Winter Collection</h3>
+                                <h2>Men RED Sneakers</h2>
+                                <h4><span class="fa fa-dollar"></span>150</h4>
+                                <h4 class="dis"><span class="fa fa-dollar"></span>200</h4>
+                            </div>
+                            
+                            <ul>
+                                <li>SIZE</li>
+                                <li class="bg">7</li>
+                                <li class="bg">8</li>
+                                <li class="bg">9</li>
+                                <li class="bg">10</li>
+                                <li class="bg">12</li>
+                            </ul>
+                            <ul class="color">
+                                <li>COLORS </li>
+                                <li class="yellow"></li>
+                                <li class="black"></li>
+                                <li class="blue"></li>
+                            </ul>
+                            
+                            <span class="foot"><i class="fa fa-shopping-bag"></i> Buy Now</span>
+                            <span class="foot"><i class="fa fa-shopping-cart"></i> Add to Cart</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="button-2" class="tabcontent text-5xl lg:text-6xl font-bold text-teal-600 mb-2 lg:mb-6">
+        Uh! Uh! Uh! Too Quick, <br /> Coming Soon! ...
+    </div>
+    <div id="button-3" class="tabcontent text-5xl lg:text-6xl font-bold text-teal-600 mb-2 lg:mb-6">
+        Uh! Uh! Uh! Too Quick, <br /> Coming Soon! ...
+    </div>
+
+    <div id="button-4" class="tabcontent text-5xl lg:text-6xl font-bold text-teal-600 mb-2 lg:mb-6">
+        Uh! Uh! Uh! Too Quick, <br /> Coming Soon! ...
+    </div>
+
+    <div id="button-5" class="tabcontent text-5xl lg:text-6xl font-bold text-teal-600 mb-2 lg:mb-6">
+        Uh! Uh! Uh! Too Quick, <br /> Coming Soon! ...
+    </div>
+
+    <div id="button-6" class="tabcontent text-5xl lg:text-6xl font-bold text-teal-600 mb-2 lg:mb-6">
+        Uh! Uh! Uh! Too Quick, <br /> Coming Soon! ...
+    </div>
+
+
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>

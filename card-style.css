@@ -1,0 +1,228 @@
+/* Product Card UI Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+#Portfolio button {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: 35px;
+    border: black;
+    border-radius: 5%;
+    line-height: 30px;
+    background: rgb(0, 140, 255);
+    margin: 0 4px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 900px;
+    margin: 0 auto;
+    background: #444851 url(bg.jpg) no-repeat;
+    margin-top: 2px;
+    box-shadow: 0 15px 50px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sub-card {
+    display: flex;
+    align-items: center;
+    height: 395px;
+    width: 750px;
+    margin: 0 auto;
+    margin-right: 55px;
+    background: #1b2139;
+    box-shadow: 0 15px 50px 10px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+    content: " ";
+    height: 395px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    background-color: #ff4400;
+    margin-left: 0px;
+    position: absolute;
+    border-radius: 0 50% 50% 0;
+    z-index: 5;
+    box-shadow: 0 15px 50px 10px rgba(0, 0, 0, 0.4);
+}
+
+.left img {
+    margin-left: -87px;
+    margin-top: -90px;
+    height: 375px;
+    width: 375px;
+}
+
+.left i {
+    color: #693500;
+    margin-top: 300px;
+    margin: center;
+    transition: all .3s ease;
+}
+
+.fa-solid {
+    margin-left: -120px;
+}
+
+.left i:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.right {
+    content: " ";
+    height: 395px;
+    width: 550px;
+    z-index: 3;
+    margin-left: 340px;
+    padding: 25px;
+}
+.product-info {
+    margin: 20px;
+}
+.product-names {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+
+.product-names h1 {
+    color: #ff6d39;
+    font-size: 24px;
+    font-weight: normal;
+}
+.product-names i {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.product-names i:hover {
+    color: #ff6d39;
+}
+
+.details {
+    margin-bottom: 7px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.details h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #dddddd;
+    margin-bottom: 10px;
+}
+
+.details h2 {
+    font-size: 34px;
+    font-weight: extrabold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.details h4 {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.details h4 .fa-dollar {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.details h4.dis {
+    display: flex;
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 35px;
+    margin-top: -33px;
+    margin-left: 75px;
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+  
+  .details h4.dis .fa-dollar {
+    font-size: 18px;
+  }
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+.color li:not(:first-child):before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .yellow:before {
+    background-color: yellow;
+  }
+  
+  .black:before {
+    background-color: black;
+  }
+  
+  .blue:before {
+    background-color: blue;
+  }  
+
+ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #a6a6a6;
+    margin-right: 20px;
+}
+
+ul li.bg {
+    padding: 7px;
+    color: #a6a6a6;
+}
+
+.foot {
+    margin-right: 10px;
+    padding-right: 25px;
+    color: #a6a6a6;
+}
+
+.foot .fa {
+    margin-right: 10px;
+    padding: 2px;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.foot .fa:hover {
+    color: #ff6d39;
+}
